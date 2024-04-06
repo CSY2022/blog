@@ -95,12 +95,12 @@ fun_features:
 
     # 是否循环播放效果
     # If true, loop animation
-    loop: true
+    loop: false
 
     # 在指定页面开启，不填则在所有页面开启
     # Enable in specified page, all pages by default
     # Options: home | post | tag | category | about | links | page | 404
-    scope: [home]
+    scope: []
 
   # 为文章内容中的标题添加锚图标
   # Add an anchor icon to the title on the post page
