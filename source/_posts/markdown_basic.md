@@ -9,8 +9,7 @@ post:
 
 John Gruber 的 Markdown 设计文档中列出的所有 Markdown 元素。
 
-###### 注:本文转自 [Gitee](https://gitee.com/sunyctf/Markdown-Guide) ，遵循MIT LICENSE，文末 CC-BY 4
-0 许可协议无效。
+###### 注:本文转自 [Gitee](https://gitee.com/sunyctf/Markdown-Guide) ，遵循MIT LICENSE ，文末 CC-BY 4.0 许可协议无效。
 
 ## 总览
 
