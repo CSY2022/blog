@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: CSY2022的博客
+subtitle: 'Veni, Vidi, Vici.'
+description: '心之所向，皆是远方'
 keywords:
 author: 陈思源
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.csy2022.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
