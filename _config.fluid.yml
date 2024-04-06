@@ -528,13 +528,13 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img:
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img: https://d.kstore.space/download/4366/pic/09.jpg
+  default_index_img:
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -542,7 +542,7 @@ post:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
     # Author, based on `author` field in front-matter, if not set, based on `author` value in hexo config
     author:
-      enable: false
+      enable: true
 
     # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
     # Post date, based on `date` field in front-matter, if not set, based on create date of .md file
@@ -891,7 +891,7 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: https://d.kstore.space/download/4366/pic/07.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -902,7 +902,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img: https://d.kstore.space/download/4366/pic/08.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -931,7 +931,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img: https://d.kstore.space/download/4366/pic/10.jpg
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -948,7 +948,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img: https://d.kstore.space/download/4366/pic/03.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
@@ -970,7 +970,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img: https://d.kstore.space/download/4366/pic/05.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -981,7 +981,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img: https://d.kstore.space/download/4366/pic/11.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -995,7 +995,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://d.kstore.space/download/4366/pic/09.jpg
+  banner_img: https://d.kstore.space/download/4366/pic/01.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
