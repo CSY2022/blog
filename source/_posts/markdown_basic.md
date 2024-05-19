@@ -1,9 +1,6 @@
 ---
 title: Markdown 基本语法
-post:
-  meta:
-    author:
-      enable: false
+date: 2024-04-06 9:35:27
 ---
 # Markdown 基本语法
 
