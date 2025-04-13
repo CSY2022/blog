@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "node minify.js",
+    "deploy": "npm run build && vercel --prod"
+  }
+}
