@@ -1,7 +1,7 @@
 // minify.js
 const fs = require("fs");
 const path = require("path");
-const minifyHtml = require("minify-html");
+const htmlMinifier = require("html-minifier"); // 使用 html-minifier 替代 minify-html
 const terser = require("terser"); // 用于压缩JS
 const cssnano = require("cssnano"); // 用于压缩CSS
 const postcss = require("postcss"); // 用于处理CSS
@@ -9,9 +9,17 @@ const postcss = require("postcss"); // 用于处理CSS
 // 配置压缩选项（根据需要调整）
 const minifyOptions = {
   html: {
-    minifyJs: true,  // 压缩内联 JS
-    minifyCss: true, // 压缩内联 CSS
-    collapseWhitespace: false, // 删除空白字符
+    collapseWhitespace: true, // 删除空白字符
+    removeComments: true, // 删除注释
+    removeRedundantAttributes: true, // 删除冗余属性
+    removeScriptTypeAttributes: true, // 删除script的type属性
+    removeStyleLinkTypeAttributes: true, // 删除style/link的type属性
+    useShortDoctype: true, // 使用短文档类型
+    minifyJS: true, // 压缩内联JS
+    minifyCSS: true, // 压缩内联CSS
+    removeAttributeQuotes: true, // 尽可能删除属性引号
+    removeEmptyAttributes: true, // 删除空属性
+    // 更多选项参考: https://github.com/kangax/html-minifier
   },
   js: {
     // Terser 压缩选项
@@ -54,7 +62,7 @@ async function minifyCssFile(filePath) {
 function minifyHtmlFile(filePath) {
   try {
     const html = fs.readFileSync(filePath, "utf8");
-    const minified = minifyHtml.minify(html, minifyOptions.html);
+    const minified = htmlMinifier.minify(html, minifyOptions.html);
     fs.writeFileSync(filePath, minified);
   } catch (err) {
     console.error(`Error minifying HTML file ${filePath}:`, err);
